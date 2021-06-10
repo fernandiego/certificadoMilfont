@@ -1,0 +1,16 @@
+{
+  "name": "certificado",
+  "version": "1.0.0",
+  "description": "gerador de certificados",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
