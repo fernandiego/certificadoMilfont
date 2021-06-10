@@ -1,5 +1,8 @@
-var express = require('express');
-var app = express();
+import express from 'express'
+const app = express();
+
+
+
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function(req, res) {
@@ -15,3 +18,7 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   res.send('POST request to the homepage');
 });
+
+app.listen(3000, () => {
+  console.log('teste')
+})
