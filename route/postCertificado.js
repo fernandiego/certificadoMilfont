@@ -1,31 +1,17 @@
-import express from 'express'
+const express = require('express')
 const router = express()
 
-router.use((req, res, next) => {
-	res.status(200).send({
-		mensagem: 'foi?'
-	})
+
+router.post('/', async (req, res) => {
+console.log("Alô alô")
+console.log(req.body)
+res.send(200)
+
+});
+
+router.get('/', async (req, res) => {
+	res.send('olá')
+	return console.log('Olá')
 })
 
-router.get('/certificado', async function (req, res) {
-	console.log("Alo?")
-	res.json([certificado]);
-});
-
-router.get('/certificado/:id', async function (req, res) {
-
-});
-
-router.post('/certificado', async function (req, res) {
-
-});
-
-router.put('/certificado/:id', async function (req, res) {
-
-});
-
-router.delete('/certificado/:id', async function (req, res) {
-
-});
-
-module.exports = router;
+exports.router = router;
