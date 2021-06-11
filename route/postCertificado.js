@@ -1,24 +1,30 @@
 import express from 'express'
-const router = express.Router();
+const router = express()
 
+router.use((req, res, next) => {
+	res.status(200).send({
+		mensagem: 'foi?'
+	})
+})
 
-router.get('/certificados', async function (req, res) {
+router.get('/certificado', async function (req, res) {
+	console.log("Alo?")
 	res.json([certificado]);
 });
 
-router.get('/certificados/:id', async function (req, res) {
+router.get('/certificado/:id', async function (req, res) {
 
 });
 
-router.post('/certificados', async function (req, res) {
+router.post('/certificado', async function (req, res) {
 
 });
 
-router.put('/certificados/:id', async function (req, res) {
+router.put('/certificado/:id', async function (req, res) {
 
 });
 
-router.delete('/certificados/:id', async function (req, res) {
+router.delete('/certificado/:id', async function (req, res) {
 
 });
 
