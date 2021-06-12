@@ -19,7 +19,8 @@ router.post('/', async (req, res) => {
 		await page.setContent(template(req.body.data))
 
 		const buffer = await page.pdf({
-			format: 'A4',
+			width: 1024,
+			height: 600,
 			printBackground: true,
 			margin: {
 				left: '0px',

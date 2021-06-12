@@ -18,5 +18,5 @@ app.get('/', async (req, res) => {
 })
 
 app.listen(1234, () => {
-  console.log('teste')
+  console.log('We are online, baby!')
 })
