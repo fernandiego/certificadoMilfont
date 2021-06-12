@@ -1,0 +1,1 @@
+web: npm app/main.js
