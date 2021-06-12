@@ -36,7 +36,7 @@ router.post('/', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
-	res.send('olá')
+	res.send('get do endpoint raíz')
 })
 
 exports.router = router;
