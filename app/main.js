@@ -17,7 +17,7 @@ app.get('/', async (req, res) => {
 	return console.log('Olá home main')
 })
 
-app.listen(process.env.port || 1234, () => {
+app.listen(process.env.PORT || 1234, () => {
 	console.log(process.env.port)
 	console.log('We are online, baby!')
 })
