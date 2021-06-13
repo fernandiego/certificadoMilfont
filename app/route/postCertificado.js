@@ -7,17 +7,17 @@ const pup = require('puppeteer')
 
 
 router.post('/', async (req, res) => {
-	// console.log("Alô alô")
+	console.log("recebendo requisição")
 	// console.log(req.body)
 
 	axios.get(req.body.template).then(async ret => {
-		// console.log(res.data)
+		console.log('entrou axios')
 		let template = hb.compile(ret.data)
 		// res.send(template(req.body.data))
 		const browser = await pup.launch({ headless: true });
 		const page = await browser.newPage();
 		await page.setContent(template(req.body.data))
-
+		console.log('passou hb')
 		const buffer = await page.pdf({
 			width: 1024,
 			height: 600,
@@ -29,8 +29,10 @@ router.post('/', async (req, res) => {
 				bottom: '0px'
 			}
 		})
-		await browser.close()
+		console.log('gerou buffer pdf')
 		res.end(buffer)
+		await browser.close()
+		console.log('fechou browser')
 
 	})
 });

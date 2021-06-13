@@ -14,10 +14,8 @@ app.use('/certificado', router)
 
 app.get('/', async (req, res) => {
 	res.send('home main')
-	return console.log('Olá home main')
 })
 
 app.listen(process.env.PORT || 1234, () => {
-	console.log(process.env.port)
 	console.log('We are online, baby!')
 })
