@@ -72,7 +72,6 @@ http://ec2-3-140-253-178.us-east-2.compute.amazonaws.com:1234/
 
 - fernandodiego.sn@gmail.com
 
-
-![twitter icon](https://www.pngkit.com/png/detail/303-3035037_line-clipart-computer-icons-social-media-facebook-small.png =100x100)
+<img src="https://www.pngkit.com/png/detail/303-3035037_line-clipart-computer-icons-social-media-facebook-small.png" alt="twitter icon" width="100" height="100"/>
 
 - https://twitter.com/fdsnascimento
