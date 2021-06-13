@@ -67,9 +67,12 @@ http://ec2-3-140-253-178.us-east-2.compute.amazonaws.com:1234/
 
 
 ## Contato
+
 ![gmail icon](https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_2x_r2.png)
-fernandodiego.sn@gmail.com
+
+- fernandodiego.sn@gmail.com
 
 
 ![twitter icon](https://www.pngkit.com/png/detail/303-3035037_line-clipart-computer-icons-social-media-facebook-small.png =100x100)
-https://twitter.com/fdsnascimento
+
+- https://twitter.com/fdsnascimento
