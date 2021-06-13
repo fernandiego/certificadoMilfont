@@ -13,9 +13,12 @@ router.post('/', async (req, res) => {
 	axios.get(req.body.template).then(async ret => {
 		console.log('entrou axios')
 		let template = hb.compile(ret.data)
+		console.log('não explodiu template')
 		// res.send(template(req.body.data))
 		const browser = await pup.launch();
+		console.log('não explodiu browser')
 		const page = await browser.newPage();
+		console.log('não explodiu page')
 		await page.setContent(template(req.body.data))
 		console.log('passou hb')
 		const buffer = await page.pdf({
