@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
 		console.log('entrou axios')
 		let template = hb.compile(ret.data)
 		// res.send(template(req.body.data))
-		const browser = await pup.launch({ headless: true });
+		const browser = await pup.launch();
 		const page = await browser.newPage();
 		await page.setContent(template(req.body.data))
 		console.log('passou hb')
