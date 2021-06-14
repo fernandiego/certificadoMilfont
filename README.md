@@ -50,9 +50,11 @@ http://ec2-3-140-253-178.us-east-2.compute.amazonaws.com:1234/
 
 ## Stack utilizada
 - NodeJS
+![imagem dos pacotes json](img/json.png)
 - Máquina Digital Ocean
 - Insomnia para envio do POST
-![imagem dos pacotes json](img/json.png)
+![Imagem Insomnia](img/insomnia.png)
+
 
 ## Arquivos
 
