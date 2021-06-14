@@ -24,6 +24,7 @@ https://gist.github.com/cmilfont/2a194a6759944a36a4a5b401f403ff42
  - A brincadeira começou na hora de upar
  - Testei localmente e funcionou("na **minha máquina** rodou" haha)
  - No heroku as outras rotas funcionavam, mas a do pdf não ia. Problemas com limitações de libs
+ - O puppeteer utiliza o chromium para gerar o pdf, e a máquina heroku não oferece tais libs
  - Na máquina AWS a ideia era poder instalar essas libs, mas veio o problema de ser uma máquina single core
  - A solução veio com a Digital Ocean que me permitiu criar uma máquina igual a minha (**Fedora 34**)
  - Aí foi só alegria
